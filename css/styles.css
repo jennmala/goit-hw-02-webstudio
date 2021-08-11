@@ -1,0 +1,119 @@
+/* 
+цвет  текста (заголовки) #212121
+цвет текста (абзацы) #757575
+белый #FFFFFF
+белый вотричный rgba(255, 255, 255, 0.6)
+лого #000000
+акцент #2196F3
+вторичный цвет фона #F5F4FA
+фон футера #2F303A
+
+*/
+
+:root {
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3;
+--primary-background-color: #FFFFFF;
+--secondary-background-color: #F5F4FA;
+--footer-background-color: #2F303A;
+
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* logo */
+.logo {
+    color: #000000;
+}
+.logo span {
+    color: var(--accent-color);
+}
+
+/* site-nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.auth-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* hero */
+.hero-title {
+    color: var(--primary-background-color);
+}
+
+.hero {
+    background-color: var(--footer-background-color);
+}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* benefits */
+.benefits .title {
+    color: var(--title-text-color);
+}
+
+/* team */
+.team .title {
+    color: var(--title-text-color);
+}
+.team.section {
+    background-color: var(--secondary-background-color);
+}
+
+/* portfolio */
+.portfolio .title {
+    color: var(--title-text-color);
+}
+
+.portfolio p {
+    color: var(--primary-text-color)
+}
+
+/* button */
+.button.primary {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+}
+
+/* footer */
+footer {
+    background-color: var(--footer-background-color);
+}
+
+.location {
+    color: var(--primary-background-color);
+} 
+
+.contact {
+    color: rgba(255, 255, 255, 0.6);
+}
